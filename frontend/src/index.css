@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-slate-50 text-gray-900 font-sans antialiased;
+}
+
+@layer utilities {
+  .bg-grid-pattern {
+    background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}
+
+@keyframes pulse-subtle {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
