@@ -3,7 +3,6 @@
 > **Status:** 🚧 Work in Progress (Prototype)
 
 ## About the Project
-**Still Thinking [-_-<]** (Team Name)
 A FinTech solution designed to help users detect and manage hidden or forgotten subscriptions.
 This project uses algorithmic pattern recognition to parse bank statements (CSV) and identify recurring payments.
 
@@ -40,4 +39,4 @@ npm run dev
 ```
 
 ---
-*Submitted for HACKCELERATE - FinTech Track*
+*Trial Project for HACKCELERATE - FinTech Track*
