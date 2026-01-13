@@ -6,14 +6,36 @@ import { Wallet } from 'lucide-react'
 
 export interface Subscription {
   Description: string
+  UnifiedName: string
   Amount: number
-  Date: string
-  Frequency?: string
-  Risk?: string
+  AvgAmount: number
+  LastDate: string
+  NextDate: string
+  Frequency: string
+  Category: string
+  Risk: string
+  RiskReasons: string[]
+  Confidence: string
+  ConfidenceScore: number
+  Status: string
+  TransactionCount: number
+  MLScore: number
+  PatternType: string
+  PatternDescription?: string
+}
+
+export interface AnalysisInsights {
+  total_subscriptions: number
+  total_monthly_cost: number
+  estimated_yearly_cost: number
+  high_risk_count: number
+  categories: string[]
+  avg_confidence: number
 }
 
 export interface AnalysisResult {
-  preview: Subscription[]
+  subscriptions: Subscription[]
+  insights: AnalysisInsights
   status: string
   message: string
 }
