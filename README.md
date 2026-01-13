@@ -20,7 +20,11 @@ This project uses algorithmic pattern recognition to parse bank statements (CSV)
 
 ## 🛠️ Tech Stack
 - **Frontend**: React (Vite), Tailwind CSS v4, Lucide React
-- **Backend**: Python (FastAPI), Pandas
+- **Backend**: Python (FastAPI), Pandas, NumPy
+- **ML/AI**: 
+  - Isolation Forest (scikit-learn) - Unsupervised pattern detection
+  - DBSCAN (scikit-learn) - Merchant name clustering
+  - Sentence Transformers (all-MiniLM-L6-v2) - Text embeddings
 - **Data**: CSV Processing (Local Analysis)
 
 ## 🚀 How to Run
